@@ -3,3 +3,5 @@
 2. Sign up for github account
 3. Sign up for unity account
 4. Add the Unity editor to the unity hub.
+5. Import assets for the day with github
+6. Open a Unity Project
