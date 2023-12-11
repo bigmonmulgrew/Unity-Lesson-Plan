@@ -1,0 +1,5 @@
+9.00am till 9.30
+1. Install Github desktop from apps anywhere
+2. Sign up for github account
+3. Sign up for unity account
+4. Add the Unity editor to the unity hub.
