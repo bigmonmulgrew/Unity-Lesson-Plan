@@ -1,0 +1,10 @@
+10am to 10:30
+1. Add our first script. (naming conventions)
+2. Basic overview of game loop.
+3. Show unity execution order.
+4. Write Start - Debug.Log("Hello World");
+5. Adding an empty gameobject with our script. (Add by dragging)
+6. Add a variable sting  and another debug ("Hello David")
+7. Add webgl with package manager (Might need to restart)
+8. Switch to webGL build mode
+9. publish
