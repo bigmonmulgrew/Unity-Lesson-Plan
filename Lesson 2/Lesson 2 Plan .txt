@@ -1,7 +1,9 @@
 9:30 to 10:am
 1. What each window is
 2. Basic naviagation
-3. Adding Game Objects 
-4. Organising folders
-5. Adding a script.
-6. Open visual studio.
+3. Reordering and resetting the windows
+4. Adding Game Objects 
+5. Organising folders
+6. Adding a script.
+7. Open visual studio.
+10 min break
