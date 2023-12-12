@@ -3,7 +3,9 @@
 2. Basic naviagation
 3. Reordering and resetting the windows
 4. Adding Game Objects 
-5. Organising folders
-6. Adding a script.
-7. Open visual studio.
+5. Moving things around
+6. Organising folders
+7. Adding a script.
+8. Open visual studio.
+
 10 min break

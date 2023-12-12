@@ -1,4 +1,9 @@
 10:30 to 11am
 1. Add web GL publisher
-2. Get background from provided Assets
+2. Get background from provided Assets, drag into unity assets folder
 3. Game design Document
+4. Add text with TMP pro, import essentials
+5. Draw attention to auto generated canvas
+6. Reset Transform and set to auto text
+7. Add text and position
+8. Add second text to be used for the ai (Duplicate)
