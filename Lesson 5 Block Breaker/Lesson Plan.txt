@@ -1,7 +1,7 @@
 11  to 12
 1. Copy over assets
 2. Add a back ground to scene
-3. Add 2d square and resize to paddle, set order in layer to 1
+3. Add 2d square and resize to paddle, set order in layer to 1, change colour
 4. Add box collider to paddle
 
 ## Paddle
@@ -16,7 +16,7 @@
 13. Prefab the paddle
 
 ## Ball
-14. Create a simple Circle sprite
+14. Create a simple Circle sprite and set colour
 15. Add Rigidbody 2D and Circle collider (default size should be fine)
 16. Setup Rigidbody2D 1,0,0,0,continuous, extrapolate
 17. Add serialised field for paddle
@@ -40,10 +40,29 @@
 32. Duplicate ceiling and add two walls.
 33. Remove sprite renderer
 34. Group walls under new empty Playspace
-35. Add Shredder and Shredder script
-36. Shredder script shoudl move to Game Over Scene when triggered
+35. Add Shredder and Shredder script, then prefab playspace
+36. Shredder script should move to Game Over Scene when triggered
 37. OnTriggerEnter2D destroy collision.gameObject, then SceneManager.LoadScene("GameOver")
 38. Test created error, scene does not exist
 39. Create simple Game Over scene Add scene to build order
 40. Duplicate scene and call it "Win" edit messge
 
+## Blocks
+41. Drag in basic brick image.
+42. Add Box collider
+43. Add oncollision enter 2D to block
+44. if collision.gameObject.GetComponent<Ball>() then Destroy(gameobjecT)
+
+## Level manager
+45. Add a level manager object
+46. Add level manager class to it. Prefab
+47. Add serialised field for debugging for total blocks
+48. Add find objects of type on startup
+49. Add a public Block Destroyed method, decrement total blocks.
+50. Add scnee manager buidl index + 1
+51. Save level, duplicate level
+52. add scenes to build order
+
+If time left add regular polygo and collider.
+
+Go for lunch
