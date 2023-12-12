@@ -38,4 +38,12 @@
 30. Test bounce of ball
 31. Create bounce physics material and add to ball.
 32. Duplicate ceiling and add two walls.
-33. Group walls under new empty Playspace
+33. Remove sprite renderer
+34. Group walls under new empty Playspace
+35. Add Shredder and Shredder script
+36. Shredder script shoudl move to Game Over Scene when triggered
+37. OnTriggerEnter2D destroy collision.gameObject, then SceneManager.LoadScene("GameOver")
+38. Test created error, scene does not exist
+39. Create simple Game Over scene Add scene to build order
+40. Duplicate scene and call it "Win" edit messge
+
