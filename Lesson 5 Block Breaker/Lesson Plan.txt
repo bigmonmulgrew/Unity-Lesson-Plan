@@ -30,3 +30,12 @@
 25. Launch on mouse click if mouse down (0)
 26. get rigidbody.velocity, add force
 27. Set hasStarted true.
+
+## Walls
+28. Add walls, these can be an empty gameobject 
+	but so we can see them more easily we will use a 2d square wioth a box collider added
+29. Resize as ceiling
+30. Test bounce of ball
+31. Create bounce physics material and add to ball.
+32. Duplicate ceiling and add two walls.
+33. Group walls under new empty Playspace
