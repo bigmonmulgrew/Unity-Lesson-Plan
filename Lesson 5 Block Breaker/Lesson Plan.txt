@@ -1,0 +1,32 @@
+11  to 12
+1. Copy over assets
+2. Add a back ground to scene
+3. Add 2d square and resize to paddle, set order in layer to 1
+4. Add box collider to paddle
+
+## Paddle
+5. Add script to paddle
+6. Remove start
+7. Add screen width, mention how we find this.
+8. Add range, how far paddle can move
+9. Get paddlePos new Vector2()
+10. Convert mouse postion to world units
+11. Clamp position Mathf.Clamp
+12. Set transform.position
+13. Prefab the paddle
+
+## Ball
+14. Create a simple Circle sprite
+15. Add Rigidbody 2D and Circle collider (default size should be fine)
+16. Setup Rigidbody2D 1,0,0,0,continuous, extrapolate
+17. Add serialised field for paddle
+18. Add Vector2 for pushforce
+19. Add private Vector 2 for paddleToBallVector
+20. Add bool for hasStarted
+21. In Start calculate the difference in position between the paddle and ball
+22. In update do stuff if !hasStarted
+23. Add placeholder methods for LockBallToPaddle and LaunchOnMouseClick()
+24. Lock Ball TO Paddle - Get paddle pos and set ball pos to paddle pos + paddleToBallVector
+25. Launch on mouse click if mouse down (0)
+26. get rigidbody.velocity, add force
+27. Set hasStarted true.
