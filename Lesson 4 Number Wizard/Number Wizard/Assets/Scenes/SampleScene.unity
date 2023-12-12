@@ -401,8 +401,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -723.9811, y: -244.52393}
-  m_SizeDelta: {x: 438.3205, y: 329.3022}
+  m_AnchoredPosition: {x: -723.9811, y: -152.0668}
+  m_SizeDelta: {x: 438.3205, y: 514.2164}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &766645769
 MonoBehaviour:
@@ -424,14 +424,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press H for Higher
+  m_text: 'Please choose a number between 1 and 10 for the wizard to guess
+
+
+    Press
+    H for Higher
 
     Press L for Lower
 
-    Press R to reset
-
-    Press
-    L if the wizard wins'
+    Press SPACE if the wizard wins'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -458,7 +459,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.05
+  m_fontSize: 49.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -7,3 +7,12 @@
 6. Reset Transform and set to auto text
 7. Add text and position
 8. Add second text to be used for the ai (Duplicate)
+10. Add serialized field
+11. Output hello world to whiteboard
+12. Add variables
+13. Add a guess in start
+14. Add user input if GetkeyDown(keycode.H)
+15. Add other user input and move to CheckInput()
+16. Move dupicate code for guess to NextGuess()
+17. Add WinGame()
+18. In NextGuess decrement attempts and if <=0 lose game
