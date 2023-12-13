@@ -1,0 +1,11 @@
+1:00 pm to 2pm
+1. Add a Cylinder primative
+2. Remove capsule collider
+3. Scale to 20,1,20
+4. Add a mesh collider
+5. Rename Platform
+6. move and tilt camera
+7. Create red material
+8. Create sphere and rename Player Marble
+9. Add rigidbody, notice collider was added automatically
+10. Add Player Script
