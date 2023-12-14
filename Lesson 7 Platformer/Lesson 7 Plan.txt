@@ -41,3 +41,24 @@
 33. Add ExitGate script
 34. On trigger enter
 35. if other.gameobject.comparetag ("player") Notice the starter asset came with a player tag
+36. Place gate under player and demo.
+
+## Platforms
+37. Search for platform asset and import.
+38. Show pink stuff
+39. Select materials and convert to URP.
+40. Add block and scale to 5x5
+41. Move player onto decent starting position.
+42. Demonstrate.
+43. Add empty for terrain
+44. Add bridge
+45. Add end platform
+46. Move end gate
+
+## Before duplicating level
+47. Check everythign is prefabbed
+48. Duplicate Levels
+49. Add to build order
+50. Demonstrate
+51. Move bridge on level 2 to force jumping
+52. Add stairs on level 3
