@@ -79,6 +79,17 @@ public class Player : MonoBehaviour
 
     void Knockback()
     {
-        throw new NotImplementedException();
+        Enemy[] enemies = GameObject.FindObjectsOfType<Enemy>();
+
+        foreach (Enemy enemy in enemies)
+        {
+            Vector3 direction = enemy.transform.position - transform.position;
+
+            Rigidbody enemyRb = enemy.GetComponent<Rigidbody>();
+            enemyRb.AddForce(direction.normalized * groundPoundForce, ForceMode.Impulse);
+
+            
+
+        }
     }
 }

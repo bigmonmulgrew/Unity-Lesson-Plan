@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -14,6 +15,20 @@ public class Enemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindAnyObjectByType<Player>();
+    }
+
+    private void Update()
+    {
+        DeleteMarble();
+    }
+
+    private void DeleteMarble()
+    {
+        if (transform.position.y < 0)
+        {
+            GameObject.FindObjectOfType<GameManager>().EnemyDefeated();
+            Destroy(gameObject);
+        }
     }
 
     void FixedUpdate()

@@ -47,3 +47,23 @@
 42. In FixedUpdate MoveTowardsPlayer
 43. if player ! null get vector 3 direction.normalized
 44. Add force direction * move speed
+45. Test
+46. Add marble physics material
+
+## Game Manager
+47. Serialize a Gameobject for enemyPrefab, spawn darius 8 and spawn height 1
+48. Create state variables enemeis to spawn, defaultsed to 1 and enmies alive
+49. in Start Spawn enemies
+50. Spawn enemeies with for loop
+51. calculate vector 2 circle position using random.insideunit circle * spawnradius
+52. Convert that to vector 3 with spawn height
+53. Instatiate prefab, spawn pos, quaternion
+54. increment enemies alive
+55. In update, if enemies alive <=0 increment enemies to spawn and spawn enemies
+56. Add public method EnemyDefeated whcih decrements enemiesAlive
+57. In enemy script add DeleteMarble(0 in update
+58. Delete marble check y pos < 0 and if so trigger enemyDefeated on Game Manager and then destroy gameobject
+
+## Back in player
+60. In knockback create Enemy[] find objects of type
+61.
