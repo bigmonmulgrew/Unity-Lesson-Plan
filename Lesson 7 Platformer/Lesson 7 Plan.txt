@@ -1,0 +1,43 @@
+2 to 3:30 platformer
+1. Go to unity asset store and search for "character"
+2. Unity starter assets are the ones we will work with but you can use others as long as they include a jump and a run.
+3. Import the starter assets, this will require a restart
+4. We do this first because some of the setup can break things, exactly what is outside the scope of today.
+5. Go to Toools, starter assets, reset. This will place an armnature in the scene and setup the camera.
+6. We'll come back to this
+7. Save and rename the scene to Level 1
+
+## Splash screem
+8. right click create new scene Called Splash
+9. import splash screens from teh provided assets
+10. Select a splash screen and change its image type to 2D and UI
+11. Right click add, ui image
+12. Change the image to the selected one.
+13. Set native size
+14. Check image positions are 0
+
+## Level loader
+15. Add an array of strings that will load into level 1
+16. string[] specialScenes = { "Splash", "Win", "GameOver" };
+17. Add float delay = 5f
+18. In start if (IsSpecialScene()) start coroutine
+19. Do is special scene first
+20. for each specialScene in specialScenes if active scene name == special scene return true, after loop return false.
+21. Write coroutine. yield return new wait then scenemanager.loadscene(1)
+22. create public method load next scene
+23. Get current scene index
+24. Load scene current+1
+25. create public method LoadGameOver() and loadscene("GameOver")
+25.5 Prefab.
+26. Duplicate Splash screen to win screen
+27. Add canvas with message to win screen
+28. Duplicate and change messae for GameOver
+29. Add all to build order, game over last.
+
+## Exit Gate
+30. Add exit game empty gameobject
+31. Add sphere collider and change radius to 1
+32. Set as trigger.
+33. Add ExitGate script
+34. On trigger enter
+35. if other.gameobject.comparetag ("player") Notice the starter asset came with a player tag
