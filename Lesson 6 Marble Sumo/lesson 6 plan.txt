@@ -11,4 +11,39 @@
 10. Add Player Script
 
 ## Player Script
-11. Add serialized fields for moveSpeed, jumpForce, poundForce
+11. Add serialized fields for moveSpeed, jumpForce, poundForce 25f, 7f, 
+12. We will add movement with rigidbody so we use physics rather than transform.
+13. Add rb to cached references
+14. find rb with GetComponent in Start
+15. Add fixed Update Method
+16. Add move method to fixed update
+17. Get two floats for input.getaxis ("Horizontal") / ("Vertical")
+18. Vector3 forceToAdd = new Vector3(x, 0f, z) * moveSpeed;
+19. rb addforce(forceToAdd)
+20. Test movement
+21. Add Jump to Update
+22. if getkeydown Space
+23. if isGrounded || jumpcount < 2
+24. rb addforce up* jumpForce, force mode impulse
+25. set isGrounded to false
+26. increment jump count
+27. else if !isGrounded && jumpcount >0
+28. calculated force = groundPoundForce * (transform.position.y - platform.transform.position.y);
+29. rb.addforce calculated * Vector3.down
+30. pound = true;
+31. Demonstrate we can now only jump once
+32. oncollision. if object is tagged with "Ground" then 
+33. set is grounded to True, jump count to 0 and 
+34. if pound call Knockback throw new NotImplementedException(); well come back to this
+
+## Enemy
+35. Duplicate Player marble
+36. Remove player script
+37. Move
+38. Add Enemy Script.
+39. Prefab
+40. Add a move speed serialised fields
+41. In Start find references to rb and player
+42. In FixedUpdate MoveTowardsPlayer
+43. if player ! null get vector 3 direction.normalized
+44. Add force direction * move speed

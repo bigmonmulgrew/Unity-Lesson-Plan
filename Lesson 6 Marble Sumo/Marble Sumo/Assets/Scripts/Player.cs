@@ -2,12 +2,12 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Player : MonoBehaviour
 {
     // Configurations
-    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float moveSpeed = 25f;
     [SerializeField] float jumpForce = 7f;
-    [SerializeField] float groundPoundForce = 10f;
+    [SerializeField] float groundPoundForce = 3f;
     [SerializeField] GameObject platform;
 
     //Cached references
@@ -70,9 +70,10 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            if(pound) Knockback();
+            
             isGrounded = true;
             jumpCount = 0;
+            if (pound) Knockback();
         }
     }
 
