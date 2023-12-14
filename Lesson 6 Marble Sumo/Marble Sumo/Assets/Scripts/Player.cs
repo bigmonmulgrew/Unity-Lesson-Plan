@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     bool isGrounded;
     bool pound;
     int jumpCount = 0;
+    float calculatedForce;
 
     void Start()
     {
@@ -58,7 +59,7 @@ public class Player : MonoBehaviour
             }
             else if (!isGrounded && jumpCount > 0) // Ground Pound
             {
-                float calculatedForce = groundPoundForce * (transform.position.y - platform.transform.position.y);
+                calculatedForce = groundPoundForce * (transform.position.y - platform.transform.position.y);
                 rb.AddForce(Vector3.down * calculatedForce, ForceMode.Impulse);
                 pound = true;
             }
@@ -79,6 +80,10 @@ public class Player : MonoBehaviour
 
     void Knockback()
     {
+        if (!pound) return;
+
+        pound = false;
+
         Enemy[] enemies = GameObject.FindObjectsOfType<Enemy>();
 
         foreach (Enemy enemy in enemies)
@@ -86,9 +91,7 @@ public class Player : MonoBehaviour
             Vector3 direction = enemy.transform.position - transform.position;
 
             Rigidbody enemyRb = enemy.GetComponent<Rigidbody>();
-            enemyRb.AddForce(direction.normalized * groundPoundForce, ForceMode.Impulse);
-
-            
+            enemyRb.AddForce(direction.normalized * calculatedForce / direction.magnitude, ForceMode.Impulse);            
 
         }
     }

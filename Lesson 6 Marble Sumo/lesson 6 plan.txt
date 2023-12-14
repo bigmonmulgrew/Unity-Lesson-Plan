@@ -65,5 +65,19 @@
 58. Delete marble check y pos < 0 and if so trigger enemyDefeated on Game Manager and then destroy gameobject
 
 ## Back in player
-60. In knockback create Enemy[] find objects of type
-61.
+60. In knockback if !pound return then set pound to false
+61. Create Enemy[] find objects of type
+62. For Each enemy in enemies
+63. Vector3 direction = enemy.transform.position - transform.position;
+64. enemyRB = getcomponent
+65. enemyRb.AddForce(direction.normalized * calculatedForce / direction.magnitude, ForceMode.Impulse);
+66. Playtest
+
+##Change platform
+67. Visit link in assets folder.
+68. Add to assets
+69. In unity go to my assets, make sure all load
+70. Download then inport handpainted turntable
+71. Import platform 4 prefab
+72. Select its platform object and add a mesh collider
+73. Scale 8,4,8
