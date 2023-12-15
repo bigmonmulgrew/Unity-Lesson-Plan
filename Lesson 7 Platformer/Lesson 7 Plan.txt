@@ -62,3 +62,16 @@
 50. Demonstrate
 51. Move bridge on level 2 to force jumping
 52. Add stairs on level 3
+
+## Player Death
+53. We could add a shredder, but just to show an alternative way,  which is usually bad....
+54. Add PlayerDeath class to player PREFAB
+55. Add public Die method
+56. Find level loader and load game  over scene
+57. Check y position of player, when less than limit call Die
+
+## Importing from modelling applications
+58. Go to blend swap
+59. Seach for an asset (account needed to download)
+60. Demonstration asset provided in assets folder.
+61. Drag blend file in
