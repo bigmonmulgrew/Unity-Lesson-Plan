@@ -70,8 +70,9 @@
 56. Find level loader and load game  over scene
 57. Check y position of player, when less than limit call Die
 
-## Importing from modelling applications
-58. Go to blend swap
-59. Seach for an asset (account needed to download)
-60. Demonstration asset provided in assets folder.
-61. Drag blend file in
+## Add other things
+A goal post?
+Collectibles
+Moving terrain
+Traps
+Springs
